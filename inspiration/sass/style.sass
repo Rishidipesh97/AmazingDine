@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900')
+$l: str-length("Inspiration Everywhere")
+
+body
+	font-family: 'Montserrat', sans-serif
+	display: flex
+	height: 100vh
+	align-items: center
+	font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-rendering: optimizeLegibility
+
+.sentence
+	margin-left: 3vw
+	font-size: 12vw
+	line-height: 1
+	text-transform: uppercase
+	user-select: none
+	span
+		color: transparent
+		text-shadow: 0px 0px 0 crimson
+		animation: animatePullOut .6s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards infinite alternate
+		position: relative
+		@for $i from 1 through $l
+			&:nth-child(#{$l - $i})
+				z-index: $i
+			&:nth-child(#{$i})
+				animation-delay: random(10) * $i/100 * 1s
+	
+	
+@keyframes animatePullOut
+	to
+		text-shadow: 5px -10px 0 crimson, 0 0 0 darken(crimson, 10), 0px -1px 0 darken(crimson, 10), 1px -2px 0 darken(crimson, 10), 1px -3px 0 darken(crimson, 10), 2px -4px 0 darken(crimson, 10), 2px -5px 0 darken(crimson, 10), 3px -6px 0 darken(crimson, 10), 3px -7px 0 darken(crimson, 10), 4px -8px 0 darken(crimson, 10), 4px -9px 0 darken(crimson, 10), 5px -10px 0 darken(crimson, 10)
+	

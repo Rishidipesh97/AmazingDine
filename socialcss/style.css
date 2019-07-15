@@ -1,0 +1,147 @@
+deck-of-cards{
+   overflow: hidden;
+}
+
+div.card {
+    positiion: relative;
+    top: 0px;
+    width: 325px;
+    height: 450px;
+    background-color: grey;
+    -ms-transform: rotate(7deg); 
+    -webkit-transform: rotate(7de-g); 
+    transform: rotate(7deg) ;
+    box-shadow: 2px 2px 1px #555;
+    border: 5px solid #eee;
+    border-radius: 6px;
+    background-color: #004f8e;
+}
+#c2{
+  margin-left: -7px;
+  margin-top:-7px;
+  transform: rotate(5deg)
+}
+#c3{
+  margin-left: -14px;
+  margin-top:-14px;
+  transform: rotate(-12deg);
+}
+.card-img{
+	height: 275px;
+    margin: 10px;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 5px;
+}
+.card-img img{
+	height: 100%;
+    width: 100%;
+}
+body{
+  padding: 50px;
+  background-color: #444;
+}
+.card-desc{
+	background-color: #eee;
+  border: 1px solid #777;
+  margin: 10px;
+  font-size: 12px;
+  padding: 2px;
+  color: black;
+}
+.card-desc ul{
+    text-align: left;
+    list-style-type: none;
+}
+.card-desc h3{
+  font-size: 1.4em;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+.showcase{
+  border: 5px solid #eee;
+  box-shadow: 2px 2px 3px #555;
+  min-height: 200px;
+  padding: 10px;
+}
+.row{
+  margin-bottom: 20px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 1.2em; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.social-media a{
+  display: inline-block !important;
+}
+.social-media a.btn{
+   padding: 9px;
+   margin-top: 5px;
+}
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: #444;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

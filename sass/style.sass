@@ -1,0 +1,131 @@
+//  base styles
+$light-color: #f8f8f8
+$primary-color: #dd4b39
+
+.half
+  width: 50%
+  
+.a-down
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  
+.a-center
+  display: flex
+  justify-content: center
+  align-items: center
+.btn
+  display: block
+  min-width: 150px
+  text-align: center
+  background: rgba(0,0,0,.6)
+  height: 48px
+  font-size: .7em
+  text-decoration: none
+  color: #fff
+  padding: 10px 0 
+  border: 2px solid $primary-color
+  border-radius: 3px
+  
+  &:hover
+    background: transparentize($primary-color,.6)
+    
+  
+=makeFlex($width: 100%,$direction: row,$justify: flex-start,$align: flex-start)
+  width: $width
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
+
+/* slide styles
+*
+  box-sizing: border-box
+.slide
+  color: #555
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  position: relative
+  z-index: 1
+
+.slide-show
+  display: flex
+  width: 300vw
+  height: 100%
+  overflow: auto
+  position: absolute
+
+.slide-item
+  +makeFlex(100%,row,null,center)
+  padding: 0
+
+  img
+    width: 100vw
+    height: 100%
+
+.slide-text
+  +makeFlex(100%,row, center, center)
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  background: transparentize(#000,.4)
+  color: $light-color
+  padding-bottom: 25px 
+  font:
+    size: 30px
+
+  div
+    height: 90%
+
+  div:nth-child(1)
+    flex-direction: column
+    padding: 0 5%
+    align-items: flex-start
+button
+  margin: 20px
+ 
+.slide-indicator
+  +makeFlex(100%,row , center,center)
+  position: absolute
+  bottom: 0
+
+  .indicator-item
+    height: 3px
+    width: 70px
+    margin: 0 10px
+    background: transparentize(#aaa,.7)
+    border: dodgerblue
+    list-style: none
+  
+[rol="low-indicator"]
+  display: block
+  height: 100%
+  width: 1%
+  background: transparentize(#fff,.3)
+
+.blur-slide
+  filter: blur(3px)
+
+/* smartphone
+@media (max-width: 768px)
+  .slide
+    color: #555
+    width: 100%
+    height: 80vh
+    overflow: hidden
+    position: relative
+    z-index: 1
+
+  
+  .slide-title
+    font-size: 20px
+
+  .indicator-item
+    height: 2px
+    width: 50px
+    margin: 0 10px
+    background: transparentize(#aaa,.7)
+    border: dodgerblue
+    list-style: none
