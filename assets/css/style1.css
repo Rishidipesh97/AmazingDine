@@ -1,0 +1,26 @@
+#searchBar{
+	border:0px solid #000000;
+	border-right: none;
+	font-size:16px;
+	padding:16px;
+	outline:none;
+    width:250px;
+
+
+}
+#searchBtn{
+	border:0px solid #000000;
+	font-size:16px;
+	padding:16px;
+	background:#f1d829;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+
+
+}
+
+#searchBtn:hover{
+	background:#f6e049;
+
+}
